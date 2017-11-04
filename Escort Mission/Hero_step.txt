@@ -1,0 +1,60 @@
+//get players input
+key_right = keyboard_check (vk_right); //make sit either 1 or zero
+//key_right = keyboard_check (ord("D"));  checks for letters being pressed
+key_left = -keyboard_check (vk_left); //makes it equal either -1 or zero 
+key_jump = keyboard_check_pressed (vk_up); //checks if the jump key was just pressed and not held down
+
+//react to inputs
+move = key_left + key_right;
+direction = key_left + key_right;  
+hsp = move * movespeed; 
+if (vsp < 40) vsp+=grav; // makes sure we aren't gettin super fast
+
+if (place_meeting (x,y+1,Block)) 
+{
+vsp = key_jump * -jumpspeed 
+}
+
+if ( move == 1 ) {
+    if ( image_xscale < 0 ) {
+        image_xscale *= -1;
+    }
+    image_speed = .5;
+} else if ( move == -1 ) {
+    if ( image_xscale > 0 ) {
+        image_xscale *= -1;
+    }
+    image_speed = .5;
+} else if ( move == 0 ) {
+    image_speed = 0;
+    image_index = 0;
+}
+
+//horizontal collison check
+if (place_meeting (x+hsp,y,Block))
+{
+global.facing = 0; 
+    while (!place_meeting (x+sign(hsp),y,Block))
+    {
+    x += sign(hsp); 
+    }
+    
+    hsp = 0; 
+}
+x +=hsp;
+
+//vertical collision check
+if (place_meeting (x,y+vsp,Block))
+{
+
+global.facing = 1; 
+    while (!place_meeting (x,y+sign(vsp),Block))
+    {
+    y += sign(vsp); 
+    }
+    
+    vsp = 0; 
+}
+
+y +=vsp; 
+
