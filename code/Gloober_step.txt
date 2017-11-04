@@ -1,0 +1,35 @@
+if (vsp < 40) vsp+=grav; // makes sure we aren't gettin super fast
+
+// Turn the image around
+if ( sign(hsp) == 1 ) {
+    if ( image_xscale < 0 ) {
+        image_xscale *= -1;
+    }
+    image_speed = .5;
+} else if ( sign(hsp) == -1 ) {
+    if ( image_xscale > 0 ) {
+        image_xscale *= -1;
+    }
+    image_speed = .5;
+}
+
+//horizontal collison check
+if (place_meeting (x+hsp,y,Block)) {
+    while (!place_meeting (x+sign(hsp),y,Block)) {
+		x += sign(hsp);
+    }
+    hsp *= -1;
+}
+x += hsp;
+
+// vertical collision check
+if (place_meeting (x,y+vsp, Block)) {
+    while (!place_meeting (x, y + sign(vsp),Block)) {
+		y += sign(vsp);
+    }
+    vsp = 0;
+}
+y += vsp
+
+
+
