@@ -1,0 +1,9 @@
+//initialize variables
+grav = 8;
+hsp = 0;
+vsp = 0;
+jumpspeed = 50;
+movespeed = 15; 
+image_speed = 0;
+image_index = 0;
+global.facing = 0; 
