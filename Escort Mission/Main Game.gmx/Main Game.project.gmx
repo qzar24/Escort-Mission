@@ -8,12 +8,16 @@
   <sprites name="sprites">
     <sprite>sprites\Sprute_Hero</sprite>
     <sprite>sprites\Sprute_NPC</sprite>
-    <sprite>sprites\Sprite_Block</sprite>
+    <sprite>sprites\Sprute_Block</sprite>
     <sprite>sprites\Sprute_atk_animation</sprite>
     <sprite>sprites\Sprute_attack</sprite>
     <sprite>sprites\Sprute_Gloober</sprite>
     <sprite>sprites\Sprute_SwipSwapper</sprite>
     <sprite>sprites\Sprute_Blorfam</sprite>
+    <sprite>sprites\Sprute_Zweet</sprite>
+    <sprite>sprites\Sprute_Maneino</sprite>
+    <sprite>sprites\Sprute_knives_right</sprite>
+    <sprite>sprites\Sprute_knives_left</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,13 +25,13 @@
     <object>objects\Hero</object>
     <object>objects\NPC</object>
     <object>objects\Block</object>
-    <object>objects\Hero_attack_right</object>
-    <object>objects\Hero_attack_left</object>
     <object>objects\Gloober</object>
     <object>objects\Swip_Swapper</object>
     <object>objects\Blorfam</object>
     <object>objects\Zweetz</object>
     <object>objects\Maneino</object>
+    <object>objects\Knives_right</object>
+    <object>objects\Knives_left</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_Level</room>

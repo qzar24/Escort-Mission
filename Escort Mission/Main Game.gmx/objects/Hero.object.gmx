@@ -140,7 +140,7 @@ y +=vsp;
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>Hero_attack_right</object>
+            <object>Knives_right</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -152,7 +152,7 @@ y +=vsp;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>4</string>
+            <string>10</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -178,7 +178,7 @@ y +=vsp;
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>Hero_attack_left</object>
+            <object>Knives_left</object>
           </argument>
           <argument>
             <kind>0</kind>
@@ -190,7 +190,7 @@ y +=vsp;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>4</string>
+            <string>10</string>
           </argument>
           <argument>
             <kind>0</kind>
