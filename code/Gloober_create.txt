@@ -1,0 +1,15 @@
+//initialize variables
+grav = 8;
+hsp = 0;
+vsp = 0;
+movespeed = 15;
+image_speed = 0;
+image_index = 0;
+
+// 0 will be left, 1 will be right
+direction = round(random(1)) 
+if (direction == 0) {
+	direction = -1
+}
+hsp = direction * movespeed;
+

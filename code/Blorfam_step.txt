@@ -1,0 +1,5 @@
+if (place_meeting (x,y+1,Block) && 
+	current_second & jump_interval) {
+	vsp = key_jump * -jumpspeed
+}
+
