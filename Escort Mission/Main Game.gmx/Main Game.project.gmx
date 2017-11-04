@@ -18,9 +18,14 @@
     <sprite>sprites\Sprute_Maneino</sprite>
     <sprite>sprites\Sprute_knives_right</sprite>
     <sprite>sprites\Sprute_knives_left</sprite>
+    <sprite>sprites\Sprute_Stuff</sprite>
+    <sprite>sprites\sprite13</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\Score_font</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Hero</object>
     <object>objects\NPC</object>
@@ -32,6 +37,7 @@
     <object>objects\Maneino</object>
     <object>objects\Knives_right</object>
     <object>objects\Knives_left</object>
+    <object>objects\Stuff</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Test_Level</room>
