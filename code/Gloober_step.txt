@@ -22,7 +22,11 @@ if (place_meeting (x+hsp,y,Block)) {
 }
 x += hsp;
 
+// vertical collision check
 if (place_meeting (x,y+vsp, Block)) {
+    while (!place_meeting (x, y + sign(vsp),Block)) {
+		y += sign(vsp);
+    }
     vsp = 0;
 }
 y += vsp

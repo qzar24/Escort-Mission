@@ -1,0 +1,2 @@
+jumpspeed = 50
+jump_interval = 2
