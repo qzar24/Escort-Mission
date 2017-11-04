@@ -1,0 +1,14 @@
+Swip_Swapper_attack_cooldown -= 1;                    //Lower the shooting cooldown timer
+if (Swip_Swapper_attack_cooldown < 0) then Swip_Swapper_attack_cooldown = 0 //Prevents timer from counting down further than 0.
+range_NPC = distance_to_object(NPC);    //Distance to the player from enemy.
+range_Hero = distance_to_object(Hero);
+if (range_NPC < 350 || range_Hero < 350)                 //If player within the range of enemy
+{
+    if (Swip_Swapper_attack_cooldown == 0)                                      //If enemy can shoot (cooldown ready)
+        {
+        attack = instance_create(x, y, SwipSwapper_attack);                  //Create a bullet relative to enemy
+        attack.direction = point_direction(x, y, NPC.x, NPC.y);   //Shoot it towards player
+        attack.speed = 10;                                           //Give it speed
+        Swip_Swapper_attack_cooldown = 50;    //Set the new cooldown time between low and high thresholds.
+        }
+}
