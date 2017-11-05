@@ -58,10 +58,10 @@ global.facing = 0;
           <argument>
             <kind>1</kind>
             <string>//get players input
-key_right = keyboard_check (vk_right); //make sit either 1 or zero
+key_right = keyboard_check (ord("D")); //make sit either 1 or zero
 //key_right = keyboard_check (ord("D"));  checks for letters being pressed
-key_left = -keyboard_check (vk_left); //makes it equal either -1 or zero 
-key_jump = keyboard_check_pressed (vk_up); //checks if the jump key was just pressed and not held down
+key_left = -keyboard_check (ord("A")); //makes it equal either -1 or zero 
+key_jump = keyboard_check_pressed (ord("W")); //checks if the jump key was just pressed and not held down
 
 //react to inputs
 move = key_left + key_right;
@@ -123,7 +123,51 @@ y +=vsp;
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="76">
+    <event eventtype="4" ename="Stuff">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>image_xscale</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>206</id>
@@ -144,15 +188,15 @@ y +=vsp;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>33</string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-6</string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>18</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -160,8 +204,20 @@ y +=vsp;
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="9" enumb="75">
+      <action>
+        <libid>1</libid>
+        <id>421</id>
+        <kind>3</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>206</id>
@@ -182,21 +238,37 @@ y +=vsp;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-47</string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-6</string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>18</string>
           </argument>
           <argument>
             <kind>0</kind>
             <string>180</string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>223</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_current_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

@@ -7,19 +7,21 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>82</bbox_left>
-  <bbox_right>183</bbox_right>
-  <bbox_top>73</bbox_top>
-  <bbox_bottom>194</bbox_bottom>
+  <bbox_left>230</bbox_left>
+  <bbox_right>919</bbox_right>
+  <bbox_top>135</bbox_top>
+  <bbox_bottom>974</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>200</width>
-  <height>200</height>
+  <width>1000</width>
+  <height>1000</height>
   <frames>
     <frame index="0">images\Sprute_Maneino_0.png</frame>
+    <frame index="1">images\Sprute_Maneino_1.png</frame>
+    <frame index="2">images\Sprute_Maneino_2.png</frame>
   </frames>
 </sprite>
